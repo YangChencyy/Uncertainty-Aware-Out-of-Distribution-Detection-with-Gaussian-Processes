@@ -109,19 +109,4 @@ For ImageNet, a key difference is that you can evaluate multiple groups of data.
 We extend our gratitude to the contributors who provided valuable insights and resources that facilitated the development of this project.
 
 ## Citing
-If this work contributes to your research, please cite us:
-```
-@article{xxx,
-  title={Uncertainty-Aware Out-of-Distribution Detection with Gaussian Processes},
-  author={Yang Chen and 
-    Chih-Li Sung and 
-    Arpan Kusari and 
-    Xiaoyang Song and 
-    Wenbo Sun},
-  journal={xxxx},
-  year={xxxx},
-  volume={XX},
-  pages={XX-XX},
-}
-
-```
+The paper is under review.
