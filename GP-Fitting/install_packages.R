@@ -3,7 +3,7 @@ required_packages <- c(
   "reticulate",
   "ramify",
   "MASS",
-  "umap",
+  "wordspace",
   "laGP"
 )
 

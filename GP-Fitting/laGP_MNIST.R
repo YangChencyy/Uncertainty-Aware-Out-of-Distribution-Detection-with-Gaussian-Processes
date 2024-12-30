@@ -1,10 +1,7 @@
 library(reticulate)
 library(ramify)
 library(wordspace)
-library(rmarkdown)
 library(MASS)
-library(foreach)
-library(umap)
 library(laGP)
 
 

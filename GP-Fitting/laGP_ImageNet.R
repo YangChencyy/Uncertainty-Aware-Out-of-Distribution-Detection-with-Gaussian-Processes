@@ -1,10 +1,7 @@
 library(reticulate)
 library(ramify)
 library(wordspace)
-library(rmarkdown)
 library(MASS)
-library(foreach)
-library(umap)
 library(laGP)
 
 
@@ -156,6 +153,7 @@ get_argmax <- function(x) {
 
 
 score_function <- function(trainset, testset, q_ = 0.95, f = 32, n_tr = 10000, n_ts = 1600, n_v = 1500, classes = 10){
+  directory_path <- paste0("Rdata_ckpt/", trainset)
   
   load(file=paste0(directory_path, "/", trainset, "_", testset, ".RData")) 
   
@@ -242,9 +240,14 @@ for (i in values){
   n_v = 1500
   classes = 10
   
-  model_fit_test(trainset = InD_Dataset, testsets = OOD_Datasets, n_tr = n_tr, n_ts = n_ts, n_v = n_v, f = f)  # Run only once
+  #model_fit_test(trainset = InD_Dataset, testsets = OOD_Datasets, n_tr = n_tr, n_ts = n_ts, n_v = n_v, f = f)  # Run only once
 }
 
+# Write to a log file
+log_file <- "results_imagenet.txt"
+sink(log_file, append = TRUE)
+cat("==== Log Start ====\n")
+cat(Sys.time(), " - Starting the script\n")
 
 for (i in values){
   test_name = i
@@ -296,10 +299,23 @@ for (i in values){
                   OOD_0.8 = list0.8_OOD,
                   AUROC_0.8 = list0.8_AUROC)
   rownames(df) <- OOD_Datasets
-  print(paste0("InD - ", InD_Dataset))
-  print(paste0("features - ", f))
-  print(paste0("n_tr - ", n_tr))
-  paged_table(df)
+  # Console output
+  sink() 
+  cat("InD Dataset: ", InD_Dataset, "\n")
+  cat("Features: ", f, "\n")
+  cat("Training Samples: ", n_tr, "\n")
+  cat("Results DataFrame:\n")
+  print(df)
+
+  # Write to a log file
+  sink(log_file, append = TRUE)
+  cat("InD Dataset: ", InD_Dataset, "\n")
+  cat("Features: ", f, "\n")
+  cat("Training Samples: ", n_tr, "\n")
+  cat("Results DataFrame:\n")
   print(df)
   
 }
+
+sink() 
+cat("Logs have been written to", log_file, "\n")
