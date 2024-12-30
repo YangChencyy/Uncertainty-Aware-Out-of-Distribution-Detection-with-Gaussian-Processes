@@ -13,36 +13,9 @@ To address this, we propose a Gaussian-process-based OOD detection method that e
 
 ---
 
-## **Getting Started**
 
-### **1. Clone the Repository**
-```bash
-git clone https://github.com/YangChencyy/Uncertainty-Aware-Out-of-Distribution-Detection-with-Gaussian-Processes.git
-cd Uncertainty-Aware-Out-of-Distribution-Detection-with-Gaussian-Processes
-```
 
-### **2. Install Dependencies**
-
-This project requires dependencies for both Python and R.
-
-#### **1. Python**
-We recommend using a virtual environment to manage Python dependencies. To set up the environment and install the required packages, run:
-
-```bash
-python -m venv env
-source env/bin/activate  # For Linux/Mac
-env\Scripts\activate     # For Windows
-pip install -r requirements.txt
-```
-
-#### **2. R**
-Ensure R is installed on your system. Then, install the required R packages using the provided script:
-
-```bash
-Rscript install_packages.R
-```
-
-### **3. Download Dataset**
+## Download Dataset
 Here we provide the following instructions for downloading relevant datasets.
 
 #### InD Dataset
@@ -55,8 +28,13 @@ For downloading OOD datasets, we kindly refer the audience to the instructions m
 
 
 ## **Usage**
-### **1. Trian the Neural Network**
-From the repo directory, 
+### **1. Train the Neural Network**
+
+(This step can be skipped by using our pre-generated data in `./GP-Fitting/data` for GP fitting, which saves time. However, you are welcome to generate data with different settings if needed.)
+
+
+
+First, from the main directory, 
 ```
 cd NN-Training
 ```
@@ -89,7 +67,10 @@ After training and evaluation, the trained model checkpoint as well as all featu
 
 
 ### **2. Gaussian process**
-Gaussain process training will utilize checkpoint data we got from previous steps. We recommend putting all data from `./NN-Training/ckpt` to `GP-Fitting/data` （only .csv files are needed）, or you can modify the directory in laGP_ImageNet.R or laGP_MNIST.R directly.
+Gaussian process training utilizes checkpoint data obtained from previous steps. Specifically, the neural network training generates feature representations that are later used for fitting a Gaussian process model. We recommend moving all relevant `.csv` data files from `./NN-Training/ckpt` to `./GP-Fitting/data` for training the GP model. Alternatively, you can modify the directory paths directly in `laGP_ImageNet.R` or `laGP_MNIST.R` to point to the correct data locations.
+
+
+For your convenience, we have provided example datasets for both MNIST and ImageNet in the `./GP-Fitting/data` directory. These datasets have a feature dimension of 32, allowing you to start GP fitting immediately if desired.
 
 First, from the main directory,
 ```
@@ -102,11 +83,45 @@ Rscript install_packages.R
 ```
 
 #### MNIST experiment
-Once all dependencies are installed, you can execute the main script for MNIST by running,
-```
+After installing all dependencies, you can execute the main script for MNIST by running:  
+```bash
 Rscript laGP_MNIST.R
 ```
-After running laGP_MNIST.R, the outputs will be saved in the directory
+Once executed, the outputs will be saved in `./GP-Fitting/results_mnist.txt`. Additionally, the R data from model fitting will be stored in `./GP-Fitting/Rdata_ckpt`.
+
+You can easily customize various parameters in `laGP_MNIST.R`, such as sample sizes, feature dimensions, and more, to suit your specific needs.
+
 
 
 #### ImageNet experiment
+To fit a Gaussian Process (GP) model on ImageNet data, run the following command in your terminal:
+
+```bash
+Rscript laGP_ImageNet.R
+```
+
+The outputs and checkpoint Rdata files will be stored in locations similar to those used for MNIST experiments.
+
+For ImageNet, a key difference is that you can evaluate multiple groups of data. These datasets follow the naming format `imagenet10-32-x-o1`. To test a specific group of data trained from the neural network, simply update the dataset name in the code.
+
+
+## Contributions
+We extend our gratitude to the contributors who provided valuable insights and resources that facilitated the development of this project.
+
+## Citing
+If this work contributes to your research, please cite us:
+```
+@article{xxx,
+  title={Uncertainty-Aware Out-of-Distribution Detection with Gaussian Processes},
+  author={Yang Chen and 
+    Chih-Li Sung and 
+    Arpan Kusari and 
+    Xiaoyang Song and 
+    Wenbo Sun},
+  journal={xxxx},
+  year={xxxx},
+  volume={XX},
+  pages={XX-XX},
+}
+
+```
