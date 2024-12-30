@@ -1,0 +1,13 @@
+data/*
+resnet50_imagenet.pth
+*.pth
+*.csv
+*.png
+.DS_Store
+*.log
+__pycache__/*
+
+/Datasets
+/Dataset
+
+*.pyc

@@ -1,0 +1,240 @@
+==== Log Start ====
+1735543510  - Starting the script
+InD Dataset:  mnist 
+Features:  32 
+Training Samples:  10000 
+Results DataFrame:
+             InD_0.95 OOD_0.95 AUROC_0.95 InD_0.9 OOD_0.9 AUROC_0.9 InD_0.8
+CIFAR10         0.957    1.000     0.9785  0.9065  1.0000   0.95325  0.8055
+FashionMNIST    0.957    0.794     0.8755  0.9065  0.8485   0.87750  0.8055
+Imagenet-c      0.957    1.000     0.9785  0.9065  1.0000   0.95325  0.8055
+SVHN            0.957    1.000     0.9785  0.9065  1.0000   0.95325  0.8055
+             OOD_0.8 AUROC_0.8
+CIFAR10        1.000   0.90275
+FashionMNIST   0.881   0.84325
+Imagenet-c     1.000   0.90275
+SVHN           1.000   0.90275
+==== Log Start ====
+1735547824  - Starting the script
+InD Dataset:  mnist-32 
+Features:  32 
+Training Samples:  10000 
+Results DataFrame:
+             InD_0.95 OOD_0.95 AUROC_0.95 InD_0.9 OOD_0.9 AUROC_0.9 InD_0.8
+CIFAR10         0.957    1.000     0.9785  0.9065  1.0000   0.95325  0.8055
+FashionMNIST    0.957    0.794     0.8755  0.9065  0.8485   0.87750  0.8055
+Imagenet-c      0.957    1.000     0.9785  0.9065  1.0000   0.95325  0.8055
+SVHN            0.957    1.000     0.9785  0.9065  1.0000   0.95325  0.8055
+             OOD_0.8 AUROC_0.8
+CIFAR10        1.000   0.90275
+FashionMNIST   0.881   0.84325
+Imagenet-c     1.000   0.90275
+SVHN           1.000   0.90275
+==== Log Start ====
+1735548406  - Starting the script
+InD Dataset:  mnist-32 
+Features:  32 
+Training Samples:  10000 
+Results DataFrame:
+             InD_0.95 OOD_0.95 AUROC_0.95 InD_0.9 OOD_0.9 AUROC_0.9 InD_0.8
+CIFAR10            NA    1.000         NA      NA  1.0000        NA      NA
+FashionMNIST       NA    0.794         NA      NA  0.8485        NA      NA
+Imagenet-c         NA    1.000         NA      NA  1.0000        NA      NA
+SVHN               NA    1.000         NA      NA  1.0000        NA      NA
+             OOD_0.8 AUROC_0.8
+CIFAR10            1        NA
+FashionMNIST       1        NA
+Imagenet-c         1        NA
+SVHN               1        NA
+==== Log Start ====
+1735548480  - Starting the script
+InD Dataset:  mnist-32 
+Features:  32 
+Training Samples:  10000 
+Results DataFrame:
+             InD_0.95 OOD_0.95 AUROC_0.95 InD_0.9 OOD_0.9 AUROC_0.9 InD_0.8
+CIFAR10            NA    1.000         NA      NA  1.0000        NA      NA
+FashionMNIST       NA    0.794         NA      NA  0.8485        NA      NA
+Imagenet-c         NA    1.000         NA      NA  1.0000        NA      NA
+SVHN               NA    1.000         NA      NA  1.0000        NA      NA
+             OOD_0.8 AUROC_0.8
+CIFAR10        1.000        NA
+FashionMNIST   0.881        NA
+Imagenet-c     1.000        NA
+SVHN           1.000        NA
+==== Log Start ====
+1735548522  - Starting the script
+InD Dataset:  mnist-32 
+Features:  32 
+Training Samples:  10000 
+Results DataFrame:
+             InD_0.95 OOD_0.95 AUROC_0.95 InD_0.9 OOD_0.9 AUROC_0.9 InD_0.8
+CIFAR10            NA    1.000         NA      NA  1.0000        NA      NA
+FashionMNIST       NA    0.794         NA      NA  0.8485        NA      NA
+Imagenet-c         NA    1.000         NA      NA  1.0000        NA      NA
+SVHN               NA    1.000         NA      NA  1.0000        NA      NA
+             OOD_0.8 AUROC_0.8
+CIFAR10        1.000        NA
+FashionMNIST   0.881        NA
+Imagenet-c     1.000        NA
+SVHN           1.000        NA
+==== Log Start ====
+1735548596  - Starting the script
+InD Dataset:  mnist-32 
+Features:  32 
+Training Samples:  10000 
+Results DataFrame:
+             InD_0.95 OOD_0.95 AUROC_0.95 InD_0.9 OOD_0.9 AUROC_0.9 InD_0.8
+CIFAR10            NA    1.000         NA      NA  1.0000        NA      NA
+FashionMNIST       NA    0.794         NA      NA  0.8485        NA      NA
+Imagenet-c         NA    1.000         NA      NA  1.0000        NA      NA
+SVHN               NA    1.000         NA      NA  1.0000        NA      NA
+             OOD_0.8 AUROC_0.8
+CIFAR10        1.000        NA
+FashionMNIST   0.881        NA
+Imagenet-c     1.000        NA
+SVHN           1.000        NA
+==== Log Start ====
+1735548667  - Starting the script
+InD Dataset:  mnist-32 
+Features:  32 
+Training Samples:  10000 
+Results DataFrame:
+             InD_0.95 OOD_0.95 AUROC_0.95 InD_0.9 OOD_0.9 AUROC_0.9 InD_0.8
+CIFAR10            NA    1.000         NA      NA  1.0000        NA      NA
+FashionMNIST       NA    0.794         NA      NA  0.8485        NA      NA
+Imagenet-c         NA    1.000         NA      NA  1.0000        NA      NA
+SVHN               NA    1.000         NA      NA  1.0000        NA      NA
+             OOD_0.8 AUROC_0.8
+CIFAR10        1.000        NA
+FashionMNIST   0.881        NA
+Imagenet-c     1.000        NA
+SVHN           1.000        NA
+==== Log Start ====
+1735548730  - Starting the script
+InD Dataset:  mnist-32 
+Features:  32 
+Training Samples:  10000 
+Results DataFrame:
+             InD_0.95 OOD_0.95 AUROC_0.95 InD_0.9 OOD_0.9 AUROC_0.9 InD_0.8
+CIFAR10            NA    1.000         NA      NA  1.0000        NA      NA
+FashionMNIST       NA    0.794         NA      NA  0.8485        NA      NA
+Imagenet-c         NA    1.000         NA      NA  1.0000        NA      NA
+SVHN               NA    1.000         NA      NA  1.0000        NA      NA
+             OOD_0.8 AUROC_0.8
+CIFAR10        1.000        NA
+FashionMNIST   0.881        NA
+Imagenet-c     1.000        NA
+SVHN           1.000        NA
+==== Log Start ====
+1735548811  - Starting the script
+InD Dataset:  mnist-32 
+Features:  32 
+Training Samples:  10000 
+Results DataFrame:
+             InD_0.95 OOD_0.95 AUROC_0.95 InD_0.9 OOD_0.9 AUROC_0.9 InD_0.8
+CIFAR10            NA    1.000         NA      NA  1.0000        NA      NA
+FashionMNIST       NA    0.794         NA      NA  0.8485        NA      NA
+Imagenet-c         NA    1.000         NA      NA  1.0000        NA      NA
+SVHN               NA    1.000         NA      NA  1.0000        NA      NA
+             OOD_0.8 AUROC_0.8
+CIFAR10        1.000        NA
+FashionMNIST   0.881        NA
+Imagenet-c     1.000        NA
+SVHN           1.000        NA
+==== Log Start ====
+1735548894  - Starting the script
+InD Dataset:  mnist-32 
+Features:  32 
+Training Samples:  10000 
+Results DataFrame:
+             InD_0.95 OOD_0.95 AUROC_0.95 InD_0.9 OOD_0.9 AUROC_0.9 InD_0.8
+CIFAR10            NA    1.000         NA      NA  1.0000        NA      NA
+FashionMNIST       NA    0.794         NA      NA  0.8485        NA      NA
+Imagenet-c         NA    1.000         NA      NA  1.0000        NA      NA
+SVHN               NA    1.000         NA      NA  1.0000        NA      NA
+             OOD_0.8 AUROC_0.8
+CIFAR10        1.000        NA
+FashionMNIST   0.881        NA
+Imagenet-c     1.000        NA
+SVHN           1.000        NA
+==== Log Start ====
+1735548980  - Starting the script
+InD Dataset:  mnist-32 
+Features:  32 
+Training Samples:  10000 
+Results DataFrame:
+             InD_0.95 OOD_0.95 AUROC_0.95 InD_0.9 OOD_0.9 AUROC_0.9 InD_0.8
+CIFAR10            NA    1.000         NA      NA  1.0000        NA      NA
+FashionMNIST       NA    0.794         NA      NA  0.8485        NA      NA
+Imagenet-c         NA    1.000         NA      NA  1.0000        NA      NA
+SVHN               NA    1.000         NA      NA  1.0000        NA      NA
+             OOD_0.8 AUROC_0.8
+CIFAR10        1.000        NA
+FashionMNIST   0.881        NA
+Imagenet-c     1.000        NA
+SVHN           1.000        NA
+==== Log Start ====
+1735548991  - Starting the script
+InD Dataset:  mnist-32 
+Features:  32 
+Training Samples:  10000 
+Results DataFrame:
+             InD_0.95 OOD_0.95 AUROC_0.95 InD_0.9 OOD_0.9 AUROC_0.9 InD_0.8
+CIFAR10            NA    1.000         NA      NA  1.0000        NA      NA
+FashionMNIST       NA    0.794         NA      NA  0.8485        NA      NA
+Imagenet-c         NA    1.000         NA      NA  1.0000        NA      NA
+SVHN               NA    1.000         NA      NA  1.0000        NA      NA
+             OOD_0.8 AUROC_0.8
+CIFAR10        1.000        NA
+FashionMNIST   0.881        NA
+Imagenet-c     1.000        NA
+SVHN           1.000        NA
+==== Log Start ====
+1735549144  - Starting the script
+InD Dataset:  mnist-32 
+Features:  32 
+Training Samples:  10000 
+Results DataFrame:
+             InD_0.95 OOD_0.95 AUROC_0.95 InD_0.9 OOD_0.9 AUROC_0.9 InD_0.8
+CIFAR10            NA    1.000         NA      NA  1.0000        NA      NA
+FashionMNIST       NA    0.794         NA      NA  0.8485        NA      NA
+Imagenet-c         NA    1.000         NA      NA  1.0000        NA      NA
+SVHN               NA    1.000         NA      NA  1.0000        NA      NA
+             OOD_0.8 AUROC_0.8
+CIFAR10        1.000        NA
+FashionMNIST   0.881        NA
+Imagenet-c     1.000        NA
+SVHN           1.000        NA
+==== Log Start ====
+1735549627  - Starting the script
+InD Dataset:  mnist-32 
+Features:  32 
+Training Samples:  10000 
+Results DataFrame:
+             InD_0.95 OOD_0.95 AUROC_0.95 InD_0.9 OOD_0.9 AUROC_0.9 InD_0.8
+CIFAR10            NA    1.000         NA      NA  1.0000        NA      NA
+FashionMNIST       NA    0.794         NA      NA  0.8485        NA      NA
+Imagenet-c         NA    1.000         NA      NA  1.0000        NA      NA
+SVHN               NA    1.000         NA      NA  1.0000        NA      NA
+             OOD_0.8 AUROC_0.8
+CIFAR10        1.000        NA
+FashionMNIST   0.881        NA
+Imagenet-c     1.000        NA
+SVHN           1.000        NA
+==== Log Start ====
+1735549886  - Starting the script
+InD Dataset:  mnist-32 
+Features:  32 
+Training Samples:  10000 
+Results DataFrame:
+             InD_0.95 OOD_0.95 AUROC_0.95 InD_0.9 OOD_0.9 AUROC_0.9 InD_0.8
+CIFAR10         0.957    1.000     0.9785  0.9065  1.0000   0.95325  0.8055
+FashionMNIST    0.957    0.794     0.8755  0.9065  0.8485   0.87750  0.8055
+Imagenet-c      0.957    1.000     0.9785  0.9065  1.0000   0.95325  0.8055
+SVHN            0.957    1.000     0.9785  0.9065  1.0000   0.95325  0.8055
+             OOD_0.8 AUROC_0.8
+CIFAR10        1.000   0.90275
+FashionMNIST   0.881   0.84325
+Imagenet-c     1.000   0.90275
+SVHN           1.000   0.90275
